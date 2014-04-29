@@ -1,0 +1,19 @@
+##### Linux privilege checker #####
+
+Searches for privileges, service settings, sensitive information, running
+processes, installed programs, network statistics, logs and  various other information about the system.
+
+Inspired from g0tm1lk's cheatsheet, available at http://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation.html
+
+
+NOTES
+
+Full output may be excessive, I tried to break it down in specific functions to make it easy to check for relevant information only by commenting out the unnecessary bits.
+
+It's using the subprocess module for running commands.
+
+Running time may vary, with all checks enabled it took ~1min on a freshly installed Debian and ~4min on a custom Kali system.
+
+DEMO
+
+See text file for output.
