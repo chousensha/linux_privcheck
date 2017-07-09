@@ -1,7 +1,9 @@
 ##### Linux privilege checker #####
 
 Searches for privileges, service settings, sensitive information, running
-processes, installed programs, network statistics, logs and  various other information about the system.
+processes, installed programs, network statistics, logs, permissions and  various other information about the system.
+
+Suggests exploits based on the detected kernel version.
 
 Inspired from g0tm1lk's cheatsheet, available at http://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation.html
 
@@ -13,6 +15,19 @@ Full output may be excessive, I tried to break it down in specific functions to 
 It's using the subprocess module for running commands.
 
 Running time may vary, with all checks enabled it took ~1min on a freshly installed Debian and ~4min on a custom Kali system.
+
+Regarding the exploit finding functionality:
+
+- in the vulnerable kernels, I prioritized the versions given in the respective CVE, unless specified otherwise in the 
+exploit source code
+
+- there is some redundancy in the exploit dictionaries, because I wanted to keep them classified in 
+kernel versions (2.4, 2.6, etc.)
+
+- some CVEs have multiple exploits available, I tried getting the verified ones, and those which were stable and up-to-date
+
+- some false positives / negatives are inevitable
+
 
 DEMO
 
