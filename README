@@ -32,3 +32,45 @@ kernel versions (2.4, 2.6, etc.)
 DEMO
 
 See text file for output.
+
+Sample output for the exploit finder:
+
+Kernel version is 3.10.0-514.21.1.el7.x86_64
+
+###########################################
+POTENTIALLY VULNERABLE TO
+Name: Double-free usb-midi SMEP Local Privilege Escalation
+CVE: CVE-2016-2384
+Source code: https://www.exploit-db.com/exploits/41999/
+###########################################
+###########################################
+POTENTIALLY VULNERABLE TO
+Name: overlayfs Privilege Escalation
+CVE: CVE-2015-1328
+Source code: https://www.exploit-db.com/exploits/37292/
+###########################################
+###########################################
+POTENTIALLY VULNERABLE TO
+Name: ptrace/sysret Privilege Escalation
+CVE: CVE-2014-4699
+Source code: https://www.exploit-db.com/exploits/34134/
+###########################################
+###########################################
+POTENTIALLY VULNERABLE TO
+Name: CLONE_NEWUSER|CLONE_FS Privilege Escalation
+CVE: N/A
+Source code: https://www.exploit-db.com/exploits/38390/
+###########################################
+###########################################
+POTENTIALLY VULNERABLE TO
+Name: b43 Wireless Driver Privilege Escalation
+CVE: CVE-2013-2852
+Source code: https://www.exploit-db.com/exploits/38559/
+###########################################
+###########################################
+POTENTIALLY VULNERABLE TO
+Name: open-time Capability file_ns_capable() Privilege Escalation
+CVE: CVE-2013-1959
+Source code: https://www.exploit-db.com/exploits/25450/
+###########################################
+
