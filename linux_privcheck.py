@@ -770,7 +770,7 @@ def findExploits():
     else:
         print 'No exploits found for this kernel version'
 
-
+########### comment / uncomment below for desired output
 
         
 # searchOS()
