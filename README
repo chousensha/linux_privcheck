@@ -28,6 +28,25 @@ kernel versions (2.4, 2.6, etc.)
 
 - some false positives / negatives are inevitable
 
+CODE BREAKDOWN
+
+The checks are split into functions for each information category:
+
+searchOS - gets information about the system, its version, SELinux status, uptime, and more
+chkSrvc - lists running processes
+chkApps - looks at what is installed on the system
+chkSrvcSettings - reads configuration files for various services, like apache, syslog and others
+lsJobs - checks what jobs are scheduled
+netInfo - various info about the network configuration
+currNetStats - current status of network connections
+chkUsers - information about user accounts on the system
+chkIntrstFiles - attempts to access files with potentially sensitive information, SSH config files, MySQL, and others
+chkLogs - looks at different log categories, in conjunction with the tail command
+chkWebSettings - what web concent is being served on the system
+chkFS - filesystem information
+findTools - looks for tools that might aid in further exploitation, like nmap, netcat, python, etc.
+findPerm - permissions check
+findExploits - suggests suitable exploits from ExploitDB based on the detected kernel version
 
 DEMO
 
